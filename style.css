@@ -1,0 +1,14 @@
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.main{
+
+    height: 500px;
+    width: 500px;
+
+}
