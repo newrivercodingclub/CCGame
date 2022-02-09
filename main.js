@@ -20,6 +20,7 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+
 //initializes canvas grid and player
 function canvasInit(){
     canvas = document.getElementById("main");
