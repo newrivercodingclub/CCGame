@@ -1,3 +1,5 @@
+//Initial lint test -SB
+
 //define canvas
 var canvas;
 var ctx;
