@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-
-<head>
-  <script src="main.js"></script>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <h1>AAAAAAAAAAAAH</h1>
-  <canvas id="main" class="main"></canvas>
-</body>
-
+<html>
+  <head>
+    <script src="Overworld.js" defer></script>
+    <!-- <script src="main.js" defer></script> -->
+    <script src="init.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <!-- Canvas container, Tutorial shows class "game-canvas" but we use "main" for D.A.'s canvas code at present. HTML element height and width inline can be set later once parameters are defined, per tutorial used to trigger canvas manipulations independent of values in css file -->
+      <canvas id="main" class="main" width ="500" height = "500" ></canvas>
+    </div>
+  </body>
+</html>
 
