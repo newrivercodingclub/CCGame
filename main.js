@@ -42,10 +42,10 @@ function canvasInit() {
   //begin drawing basic grid
   ctx.beginPath();
   //loop through calculated coordinates and draw a square at each point
-  for (var x = 0; x < gridCoordinates.length; x++) {
+  for (var i = 0; i < gridCoordinates.length; i++) {
     ctx.strokeRect(
-      gridCoordinates[x].x,
-      gridCoordinates[x].y,
+      gridCoordinates[i].x,
+      gridCoordinates[i].y,
       squareSize,
       squareSize
     );
@@ -55,12 +55,10 @@ function canvasInit() {
 
   //initialize player
   ctx.fillRect(player.position[0], player.position[1], squareSize, squareSize);
-
-  //begin playing background music
-  var audio = new Audio("music/song1.mp3");
-  audio.play();
 }
 
+//call canvasInit on page load
+window.onload = canvasInit;
 //calls keyHandler when a key is pressed
 window.addEventListener("keydown", function (event) {
   keyHandler(event);
@@ -86,6 +84,14 @@ async function keyHandler(event) {
       case "Right": // IE/Edge specific value
       case "ArrowRight":
         await arrowRight();
+        break;
+      case "Space":
+      case " ":    
+        //begin playing background music
+        var audio = new Audio("music/song1.mp3");
+        audio.currentTime = 0;
+        audio.pause();
+        audio.play();
         break;
     }
   }
