@@ -1,14 +1,28 @@
-body{
-    
-    display: flex;
-    justify-content: center;
-    align-content: center;
-
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
-.main{
+/* .game-container in tutorial */
+.main {
+  position: relative;
+  height: 500px; /*tutorial shows 198px for gameboy styling*/
+  width: 500px; /*tutorial shows 352px for gameboy styling*/
+  margin: 0 auto;
+  margin-top: 20px;
+  outline: 1px dotted white;
 
-    height: 500px;
-    width: 500px;
+  /* transform: scale(1) translateY(50%); currently not needed due to source file being 500px*/
+}
 
+.game-container canvas {
+  image-rendering: pixelated;
 }
