@@ -28,6 +28,6 @@ class Overworld {
       //sets a wait parameter for drawing to 200 ms, will be replaced later with loop check for draw
       player.sprite.draw(this.ctx);
       npc1.sprite.draw(this.ctx);
-    }, 1000);
+    }, 200);
   }
 }
