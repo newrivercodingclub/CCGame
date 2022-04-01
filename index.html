@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Scripts, when in head use defer, makes sure script is downloaded early, but doesn't run until html is populated -->
     <script src="Overworld.js" defer></script>
-    <!-- <script src="main.js" defer></script> -->
+    <script src="GameObject.js" defer></script>
+    <script src="Sprite.js" defer></script>
     <script src="init.js" defer></script>
+    <!-- init.js must be last -->
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <div class="game-container">
-      <!-- Canvas container, Tutorial shows class "game-canvas" but we use "main" for D.A.'s canvas code at present. HTML element height and width inline can be set later once parameters are defined, per tutorial used to trigger canvas manipulations independent of values in css file -->
-      <canvas id="main" class="main" width ="500" height = "500" ></canvas>
+      <canvas id="main" class="main" width="325" height="198"></canvas>
     </div>
   </body>
 </html>

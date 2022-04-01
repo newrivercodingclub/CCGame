@@ -8,26 +8,26 @@ class Overworld {
   init() {
     const image = new Image();
     image.onload = () => {
-      this.ctx.drawImage(image, 0, 0);
+      this.ctx.drawImage(image, 0, 0); //source, draw location x, draw location y
     };
     image.src = "./images/maps/109base.png";
-    
-    const x=20;
-    const y=24;
-    const player = new Image();
-    player.onload = () => {
-        this.ctx.drawImage(
-            player,
-            0,//left cut
-            0,//top cut
-            32,//cut width
-            32,//cut height
-            x,//x render location
-            y,//
-            32,//size of x cut render
-            32 //size of y cut render         
-            )
-    }
-    player.src = "./images/characters/people/player.png"
+
+    //Place game objects
+
+    const player = new GameObject({
+      x: 1,
+      y: 2,
+    });
+
+    const npc1 = new GameObject({
+      x: 5,
+      y: 6,
+      src: "/images/characters/people/npc1.png",
+    });
+    setTimeout(() => {
+      //sets a wait parameter for drawing to 200 ms, will be replaced later with loop check for draw
+      player.sprite.draw(this.ctx);
+      npc1.sprite.draw(this.ctx);
+    }, 200);
   }
 }

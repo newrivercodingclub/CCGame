@@ -14,13 +14,13 @@ body {
 /* .game-container in tutorial */
 .main {
   position: relative;
-  height: 500px; /*tutorial shows 198px for gameboy styling*/
-  width: 500px; /*tutorial shows 352px for gameboy styling*/
+  height: 198px; /*tutorial shows 198px for gameboy styling*/
+  width: 325px; /*tutorial shows 352px for gameboy styling*/
   margin: 0 auto;
   margin-top: 20px;
   outline: 1px dotted white;
 
-  /* transform: scale(1) translateY(50%); currently not needed due to source file being 500px*/
+  transform: scale(2.5) translateY(50%); /*scale enlarges for visablity, translate y shifts .main down 50% on y axis for alignment*/
 }
 
 .game-container canvas {
