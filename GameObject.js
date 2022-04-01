@@ -4,7 +4,7 @@ class GameObject {
     this.y = config.y || 0;
     this.sprite = new Sprite({
       gameObject: this,
-      src: config.src || "/images/characters/people/player.png",
+      src: config.src || "./images/characters/people/player.png",
     });
   }
 }

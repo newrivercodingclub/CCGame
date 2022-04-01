@@ -22,7 +22,7 @@ class Overworld {
     const npc1 = new GameObject({
       x: 5,
       y: 6,
-      src: "/images/characters/people/npc1.png",
+      src: "./images/characters/people/npc1.png",
     });
     setTimeout(() => {
       //sets a wait parameter for drawing to 200 ms, will be replaced later with loop check for draw
