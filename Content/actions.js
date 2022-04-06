@@ -27,6 +27,7 @@ window.Actions = {
       { type: "textMessage", text: "{TARGET} is slipping all around!"},
     ]
   },
+  
   //Items
   item_recoverStatus: {
     name: "Heating Lamp",
